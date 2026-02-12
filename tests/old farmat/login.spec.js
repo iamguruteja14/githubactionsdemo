@@ -1,5 +1,5 @@
 import{test,expect} from '@playwright/test'
-test('verify the login functionalities in orange hrm',{tag:['@regression']},async({page})=>{
+test('verify the login functionalities in orange hrm',{tag:'@regression'},async({page})=>{
     test.setTimeout(120000)
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
     await page.locator('//input[@name="username"]').fill(process.env.APP_USERNAME)
