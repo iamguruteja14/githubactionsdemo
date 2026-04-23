@@ -1,6 +1,6 @@
 import { expect } from "@playwright/test"
 
-exports.LoginPage=class LoginPage{
+export class LoginPage{
     constructor(page){
         this.page=page
         this.logo= page.locator('img[alt="company-branding"]')
